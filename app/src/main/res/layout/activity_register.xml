@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:backgroundTint="@color/teal_700"
+    tools:context=".RegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="SignUp Page"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:hint="Firstname"
+        android:id="@+id/fnameid"
+        android:paddingLeft="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:hint="Lastname"
+        android:id="@+id/lnameid"
+        android:paddingLeft="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:hint="Email"
+            android:id="@+id/mail"
+            android:paddingLeft="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:text="Signup"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:onClick="signup"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login Here"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:onClick="gologin"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
